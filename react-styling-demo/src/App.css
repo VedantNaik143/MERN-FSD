@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    min-height: 100vh;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.app h1 {
+    margin-bottom: 25px;
+}
+
+/* CSS Grid */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .app h1 {
+        font-size: 25px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
